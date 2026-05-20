@@ -105,9 +105,26 @@ ul li:active, #borrar:active {
     background-color: #b71c1c; 
 }
 
+
 .raiz{
     background-color: rgb(119, 119, 119);
 }
 .raiz:hover{
+    background-color: darkorange;
+}
+
+
+.sin{
+    background-color: rgb(119, 119, 119);
+}
+.raiz:hover{
+    background-color: darkorange;
+}
+
+
+.cos{
+    background-color: rgb(119, 119, 119);
+}
+.cos:hover{
     background-color: darkorange;
 }
