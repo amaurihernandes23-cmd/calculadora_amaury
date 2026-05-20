@@ -105,10 +105,13 @@ let m = {
                 break;
 
             case "igual":
-                //console.log("igual");
-                p.operaciones.innerHTML = eval(p.operaciones.innerHTML);
-                p.resultado = true;
-                break;
+                if (p.operaciones.innerHTML.includes("/0")) {
+                    p.operaciones.innerHTML = "No se puede dividir ";
+                }else{
+                    p.operaciones.innerHTML = eval(p.operaciones.innerHTML);
+                    p.resultado = true;
+                }
+                break;  
         }
     },
     borrarCalculadora: function () {
