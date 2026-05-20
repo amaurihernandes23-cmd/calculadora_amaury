@@ -50,9 +50,7 @@ let m = {
         else if(tecla == "Escape"){
 
             m.borrarCalculadora();
-
  }
-
     });
     },
     oprimirtecla: function (tecla) {
@@ -111,8 +109,25 @@ let m = {
                     p.operaciones.innerHTML = eval(p.operaciones.innerHTML);
                     p.resultado = true;
                 }
-                break;  
-        }
+                break; 
+            
+            case "raiz":
+                if (p.operaciones.innerHTML === "0") return;
+
+                let valor = parseFloat(p.operaciones.innerHTML);
+
+                if (!isNaN(valor)) {
+                    p.operaciones.innerHTML = Math.sqrt(valor);
+                    p.resultado = true;
+                } else {
+                    p.operaciones.innerHTML = "Error";
+                }
+                break;
+
+            
+
+
+            }
     },
     borrarCalculadora: function () {
         p.operaciones.innerHTML = 0;
