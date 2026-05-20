@@ -117,7 +117,7 @@ ul li:active, #borrar:active {
 .sin{
     background-color: rgb(119, 119, 119);
 }
-.raiz:hover{
+.sin:hover{
     background-color: darkorange;
 }
 
@@ -126,5 +126,13 @@ ul li:active, #borrar:active {
     background-color: rgb(119, 119, 119);
 }
 .cos:hover{
+    background-color: darkorange;
+}
+
+
+.potencia{
+    background-color: rgb(119, 119, 119);
+}
+.potencia:hover{
     background-color: darkorange;
 }

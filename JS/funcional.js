@@ -147,8 +147,10 @@ let m = {
                     p.operaciones.innerHTML = "Error";
                 }
                 break;
-            
 
+            case "potencia":
+                p.operaciones.innerHTML += "**";
+                break;
             
             }
     },
