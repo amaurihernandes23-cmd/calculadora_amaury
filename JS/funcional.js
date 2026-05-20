@@ -116,4 +116,3 @@ let m = {
     }
 }
 m.inicio();
-//amauryyyy 
